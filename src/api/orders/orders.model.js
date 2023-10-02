@@ -17,6 +17,10 @@ const ordersSchema = new Schema({
         ref: 'products',
         required: true,
       },
+      productSize: {
+        type: String,
+        enum: ['S', 'M', 'L', 'XL']
+      },
       quantity: {
         type: Number,
         required: true,
