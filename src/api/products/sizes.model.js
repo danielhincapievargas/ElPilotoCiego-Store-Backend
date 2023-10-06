@@ -10,9 +10,9 @@ const sizeSchema = new Schema(
       type: Number,
     },
   },
-  /* {
+  {
     _id: false, // Esto evita que se genere un ID para cada talla
-  } */
+  }
 );
 
 const Size = model('Size', sizeSchema);

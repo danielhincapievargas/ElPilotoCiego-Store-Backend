@@ -5,7 +5,7 @@ let connection
 const connect = async () => {
   if(connection) return
 
-  const MONGO_URI = 'mongodb+srv://danielhincapievargas:EPCDB2023@databaseepc.phuekkf.mongodb.net/epcStoreDB'
+  const url = process.env.DATABASE_URL
 
   connection = mongoose.connection
 
@@ -21,7 +21,7 @@ const connect = async () => {
     console.log('Error connecting to MongoDB', error)
   })
 
-  await mongoose.connect(MONGO_URI)
+  await mongoose.connect(url)
 }
 
 
