@@ -13,7 +13,7 @@ Main base of the services used within the Go Cab Now App
 
 ## Installation 🔧
 
-   1. Clone the repository: https://github.com/GomezJuanEfe/go-cab-now-backend
+   1. Clone the repository: git@github.com:danielhincapievargas/ElPilotoCiego-Store-Backend
 
    2. Run npm install.
 
