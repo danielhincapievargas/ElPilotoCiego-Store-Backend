@@ -1,4 +1,5 @@
 const { Schema, model } = require('mongoose');
+const Size = require('./sizes.model');
 
 const productsSchema = new Schema(
   {
@@ -21,15 +22,7 @@ const productsSchema = new Schema(
       required: true,
     },
     productSizes: {
-      type: [{
-        size: {
-          type: String,
-          enum: ['S', 'M', 'L', 'XL'],
-        },
-        stock: {
-          type: Number,
-        },
-      }],
+      type: [Size.schema],
       validate: {
         validator: function () {
           return (this.productType === 'Tee' || this.productType === 'Hoodie') ? this.productSizes.length > 0 : true;
