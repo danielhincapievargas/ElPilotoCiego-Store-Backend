@@ -1,4 +1,4 @@
-# Backend Go Cab Now App 💻
+# Backend El Piloto Ciego Store App 💻
 
 Main base of the services used within the Go Cab Now App
 
